@@ -1,0 +1,31 @@
+.features {
+    padding-bottom: 0;
+
+    &__list {
+        @extend %list;
+        @include flexed(flex-start, space-between);
+    }
+    &__item {
+            width: 23%;
+    }
+    &__bcg {
+        @include flexed(center, center);
+        width: 270px;
+        height: 120px;
+        background-color: $secondary-bcg;
+        border-radius: 4px;
+    }
+    &__label {
+        margin: 30px auto 10px 0;
+
+        color: $title-color;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+    }
+    &__text {
+        line-height: 1.71;
+    }
+
+}

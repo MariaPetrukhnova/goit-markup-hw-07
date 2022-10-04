@@ -1,0 +1,95 @@
+.page-footer {
+    background-color: $footer-bcg;
+    padding: 60px 0;
+
+    &__container {
+        @include flexed (baseline, flex-start);
+    }
+
+    &__adr {
+    font-style: normal;
+    line-height: 1.71;
+    margin-top: 20px;
+    }
+
+    &__adr-list {
+        @extend %list;
+    }
+
+    &__adr-item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+
+    &__adr-link {
+        @extend %link;
+        color: $footer-contact;
+    }
+
+    &__adr-link--white {
+        @extend %link;
+        color: $white-color;
+    }
+
+    &__join {
+        margin-left: 70px;
+    }
+
+    &__join-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: $white-color;
+        margin-bottom: 20px;
+    }
+
+    &__join-item:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__subscribe {
+    margin-left: auto;
+    }
+
+    &__subscribe-title {
+        display: block;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: $white-color;
+        margin-bottom: 20px;
+    }
+
+    &__subscribe-thumb {
+        @include flexed (flex-start, center);        
+    }
+
+    &__subscribe-input {
+        width: 358px;
+        padding: 15px 16px;
+        margin-right: 12px;
+        background-color: transparent;
+        border: 1px solid $footer-input-border;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        font-size: 16px;
+        line-height: 1.25;
+        color: $footer-contact;
+
+        &::placeholder {
+            font-size: 16px;
+            line-height: 1.25;
+            color: $footer-contact;
+        }
+    }
+
+    &__subscribe-icon {
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+
+    &__subscribe-btn {
+        display: inline-block;
+    }
+}
